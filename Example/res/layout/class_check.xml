@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/linearlayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:weightSum="10.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+	android:id="@+id/linearlayout3"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:weightSum="10.0"
+	android:layout_weight="8">
+	
+    <GridView  
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:id="@+id/main_page_gridview"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+     android:gravity="center"
+     android:columnWidth="50pt"
+     android:stretchMode="columnWidth"/>
+    
+</LinearLayout>
+<LinearLayout
+	android:id="@+id/linearlayout5"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:layout_weight="1">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+		android:layout_gravity="center_vertical" 
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="查詢" />
+
+</LinearLayout>
+<LinearLayout
+	android:id="@+id/linearlayout2"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:background="#CDCDC1"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:layout_weight="1">
+
+<RelativeLayout 
+ 	android:id="@+id/RelatLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="0.5"
+	android:onClick="onAppearancecheck">   
+    
+    <ImageView
+    android:id="@+id/appearancecheck"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/appearancecheck" 
+    android:onClick="onAppearancecheck"/>
+    
+</RelativeLayout>
+
+<RelativeLayout 
+ 	android:id="@+id/RelatLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#5C5C5C"
+	android:gravity="center"
+	android:layout_weight="0.5"
+	android:onClick="onclasscheck">   
+    >
+<ImageView
+    android:id="@+id/classcheck"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/classcheck" 
+    android:onClick="onclasscheck"/>
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>

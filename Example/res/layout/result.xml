@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/linearlayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:weightSum="10.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+	android:id="@+id/linearlayout3"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:weightSum="10.0"
+	android:layout_weight="9">
+
+    <ImageView 
+    android:id="@+id/bigappback"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="center"/>
+
+    <ListView
+        android:id="@+id/showlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </ListView>
+    
+     <TextView
+       android:id="@+id/undata"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:layout_marginLeft="15dp"
+       android:layout_marginTop="15dp"
+       android:textSize="15sp"
+     /> 
+     
+     <Button
+       android:id="@+id/goback"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:layout_gravity="center"
+       android:layout_marginBottom="15dp"
+       android:layout_centerInParent="true"
+       android:layout_alignParentBottom="true"
+       android:text="BACK"
+     />
+    
+</RelativeLayout>
+<LinearLayout
+	android:id="@+id/linearlayout2"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:background="#CDCDC1"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:layout_weight="1">
+
+<RelativeLayout 
+ 	android:id="@+id/RelatLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="0.5"
+	android:onClick="onAppearancecheck">   
+    
+    <ImageView
+    android:id="@+id/appearancecheck"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/appearancecheck" 
+    android:onClick="onAppearancecheck"/>
+    
+</RelativeLayout>
+
+<RelativeLayout 
+ 	android:id="@+id/RelatLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="0.5"
+	android:onClick="onclasscheck">   
+    >
+<ImageView
+    android:id="@+id/classcheck"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/classcheck" 
+    android:onClick="onclasscheck"/>
+</RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>

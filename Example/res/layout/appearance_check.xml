@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/linearlayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:weightSum="10.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+	android:id="@+id/linearlayout4"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="1">
+	<RelativeLayout 
+ 	android:id="@+id/ColorRL"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="1"
+	>   
+<ImageButton
+	android:id="@+id/color"
+	android:layout_width="75dp"
+	android:layout_height="wrap_content"
+	android:background="@drawable/color"
+	android:layout_weight="1"
+	android:layout_gravity="center_vertical" />
+   </RelativeLayout>
+<RelativeLayout 
+ 	android:id="@+id/StripeRL"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="1"
+	>   
+<Button
+	android:id="@+id/stripe"
+	android:layout_width="75dp"
+	android:layout_height="wrap_content"
+	android:background="@drawable/stripe"
+	android:layout_gravity="center_vertical" />
+ </RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/CheckRL"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="1"
+	>   
+<Button
+	android:id="@+id/check"
+	android:layout_width="75dp"
+	android:layout_height="wrap_content"
+	android:background="@drawable/check"
+	android:layout_gravity="center_vertical" 
+	/>
+ </RelativeLayout>
+</LinearLayout>
+<RelativeLayout
+	android:id="@+id/RelativeLayout3"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:weightSum="10.0"
+	android:layout_weight="8">
+
+    <ImageView 
+    android:id="@+id/colordraw"
+    android:layout_gravity="center"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:scaleType="center"
+    android:layout_centerInParent="true"
+    android:background="@drawable/fly"/>
+    <ImageView 
+    android:id="@+id/stripedraw"
+    android:layout_gravity="center"
+ 	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:scaleType="center"
+    />
+</RelativeLayout>
+<LinearLayout
+	android:id="@+id/linearlayout2"
+	android:layout_width="match_parent"
+	android:layout_height="0px"
+	android:background="#CDCDC1"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:layout_weight="1">
+
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#5C5C5C"
+	android:gravity="center"
+	android:layout_weight="0.5"
+	android:onClick="onAppearancecheck">   
+    
+    <ImageView
+    android:id="@+id/appearancecheck"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/appearancecheck" 
+    android:onClick="onAppearancecheck"/>
+    
+</RelativeLayout>
+
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#CDCDC1"
+	android:gravity="center"
+	android:layout_weight="0.5"
+	android:onClick="onclasscheck">   
+    >
+<ImageView
+    android:id="@+id/classcheck"
+    android:layout_width="75dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/classcheck" 
+    android:onClick="onclasscheck"/>
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>

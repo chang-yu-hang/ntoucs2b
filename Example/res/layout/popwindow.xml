@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <GridView
+        android:id="@+id/selectcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearlayout2"
+        android:background="#66CCCC"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+    
+<LinearLayout
+    android:id="@+id/linearlayout2"
+	android:layout_width="match_parent"
+	android:layout_height="25dp"
+    android:background="#66CCCC"
+	>
+    <TextView
+        android:id="@+id/title"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:text="string"
+       android:layout_marginLeft="15dp"
+       android:textSize="15sp"
+         />
+</LinearLayout>
+    
+    <Button
+         android:id="@+id/exit"
+         android:layout_width="25dp"
+         android:layout_height="24dp"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/exit_button" />
+
+</RelativeLayout>

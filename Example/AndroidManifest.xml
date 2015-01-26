@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.butterflyidentify"
+    android:versionCode="1"
+    android:versionName="1.5"
+    android:installLocation="preferExternal" >
+   <!-- installLocation preferExternal 將容量裝置sd卡中 -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" 
+       />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.butterflyidentify.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.butterflyidentify.AppearanceCheck"
+            android:label="@string/title_activity_appearance_check" 
+            android:screenOrientation="portrait">
+            <!-- screenOrientation portrait 畫面直式-->
+        </activity>
+        <activity
+            android:name="com.example.butterflyidentify.ClassCheck"
+            android:label="@string/title_activity_class_check"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:screenOrientation="portrait">
+            <!-- windowSoftInputMode 鎖自動彈出鍵盤 -->
+        </activity>
+        <activity
+            android:name="com.example.butterflyidentify.PictureIdentify"
+            android:label="@string/title_activity_picture_identify" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.butterflyidentify.Collection"
+            android:label="@string/title_activity_collection" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.butterflyidentify.Result"
+            android:label="@string/title_activity_result" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.butterflyidentify.ButterflyIllustrated"
+            android:label="@string/title_activity_butterfly_illustrated" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
